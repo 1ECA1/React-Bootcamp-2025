@@ -117,3 +117,12 @@ let d;
 console.log(d);
 
 let e;
+console.log(e);
+ 
+let f;
+console.log(f);
+
+function greet(name) {
+    console.log
+}
+greet(); 
