@@ -30,7 +30,7 @@ const availableBooks = library.filter(book => book.available);
 console.log("Available Books:", availableBooks);
 
 // Step 4:
-const foundBook = library.find(book => book.title === "");
+const foundBook = library.find(book => book.title === "Season of the Migrationto the north");
 console.log("Found Book:", foundBook);
 
 // Step 5: 
