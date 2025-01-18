@@ -132,7 +132,7 @@ const student = {
 }
 console.log(student.getInfo());
 
-// task 3
+// last task
 
 const c = prompt("input the number");
 const d = prompt("input the number");
