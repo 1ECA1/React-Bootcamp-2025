@@ -1,365 +1,155 @@
-// function with Number
-function add(a, b) {
-    return a + b;
-}
-
-function subtract(a, b) {
-    return a - b;
-}
-
-function multiply(a, b) {
-    return a * b;
-}
-
-function divide(a, b) {
-    return b !== 0 ? a / b : "Cannot divide by zero";
-}
-
-function modulus(a, b) {
-    return a % b;
-}
-
-function square(num) {
-    return num * num;
-}
+// create 50 arrow functions without a paremeter
 
-function cube(num) {
-    return num ** 3;
-}
-
-function power(base, exponent) {
-    return base ** exponent;
-}
-
-function isEven(num) {
-    return num % 2 === 0;
-}
-
-function isOdd(num) {
-    return num % 2 !== 0;
-}
-
-// function with string 
-function greet(name) {
-    return "Hello, " + name + "!";
-}
-
-function upperCase(str) {
-    return str.toUpperCase();
-}
-
-function lowerCase(str) {
-    return str.toLowerCase();
-}
-
-function reverseString(str) {
-    return str.split("").reverse().join("");
-}
-
-function concatenate(str1, str2) {
-    return str1 + str2;
-}
-
-function getLength(str) {
-    return str.length;
-}
-
-function charAtIndex(str, index) {
-    return str.charAt(index);
-}
-
-function repeatString(str, times) {
-    return str.repeat(times);
-}
-
-function startsWith(str, prefix) {
-    return str.startsWith(prefix);
-}
-
-function endsWith(str, suffix) {
-    return str.endsWith(suffix);
-}
-
-// function with boolean 
-function isTruthy(value) {
-    return !!value;
-}
-
-function isFalsy(value) {
-    return !value;
-}
-
-function not(value) {
-    return !value;
-}
-
-function and(a, b) {
-    return a && b;
-}
-
-function or(a, b) {
-    return a || b;
-}
+const arrowOne = () => console.log(`Here is an arrow function number one without a parameter`);
+arrowOne();
 
-function xor(a, b) {
-    return (a || b) && !(a && b);
-}
+const arrowTwo = () => console.log(`Here is an arrow function number two without a parameter`);
+arrowTwo();
+ 
+const arrowThree = () => console.log(`Here is an arrow function number three without a parameter`);
+arrowThree();
 
-function isGreater(a, b) {
-    return a > b;
-}
+const arrowFour = () => console.log(`Here is an arrow function number four without a parameter`);
+arrowFour();
 
-function isLess(a, b) {
-    return a < b;
-}
-
-function isEqual(a, b) {
-    return a === b;
-}
-
-function isNotEqual(a, b) {
-    return a !== b;
-}
-
+const arrowFive = () => console.log(`Here is an arrow function number five without a parameter`);
+arrowFive();
 
-// funtion with undefined and null
-function returnUndefined() {
-    return undefined;
-}
+const arrowSix = () => console.log(`Here is an arrow function number six without a parameter`);
+arrowSix();
 
-function returnNull() {
-    return null;
-}
+const arrowSeven = () => console.log(`Here is an arrow function number seven without a parameter`);
+arrowSeven();
 
-function isUndefined(value) {
-    return value === undefined;
-}
+const arrowEight = () => console.log(`Here is an arrow function number eight without a parameter`);
+arrowEight();
 
-function isNull(value) {
-    return value === null;
-}
+const arrowNine = () => console.log(`Here is an arrow function number nine without a parameter`);
+arrowNine();
 
-function isNullOrUndefined(value) {
-    return value == null;  // true for both null and undefined
-}
-
-function defaultTo(value, defaultValue) {
-    return value !== undefined ? value : defaultValue;
-}
-
-function checkType(value) {
-    return typeof value;
-}
-
-function isNumber(value) {
-    return typeof value === "number";
-}
-
-function isString(value) {
-    return typeof value === "string";
-}
-
-function isBoolean(value) {
-    return typeof value === "boolean";
-}
-
-// Non premative data type
-
-// function with arrays
-function createArray(...elements) {
-    return elements;
-}
-
-function getFirstElement(arr) {
-    return arr[0];
-}
-
-function getLastElement(arr) {
-    return arr[arr.length - 1];
-}
-
-function arrayLength(arr) {
-    return arr.length;
-}
-
-function pushElement(arr, element) {
-    arr.push(element);
-    return arr;
-}
-
-function popElement(arr) {
-    return arr.pop();
-}
-
-function shiftElement(arr) {
-    return arr.shift();
-}
-
-function unshiftElement(arr, element) {
-    arr.unshift(element);
-    return arr;
-}
-
-function reverseArray(arr) {
-    return arr.reverse();
-}
-
-function sortArray(arr) {
-    return arr.sort();
-}
-
-// function with Object
-function createPerson(name, age) {
-    return { name, age };
-}
-
-function getObjectKeys(obj) {
-    return Object.keys(obj);
-}
-
-function getObjectValues(obj) {
-    return Object.values(obj);
-}
-
-function mergeObjects(obj1, obj2) {
-    return { ...obj1, ...obj2 };
-}
-
-function deleteProperty(obj, key) {
-    delete obj[key];
-    return obj;
-}
-
-function hasProperty(obj, key) {
-    return obj.hasOwnProperty(key);
-}
-
-function getProperty(obj, key) {
-    return obj[key];
-}
-
-function updateProperty(obj, key, value) {
-    obj[key] = value;
-    return obj;
-}
-
-function freezeObject(obj) {
-    return Object.freeze(obj);
-}
-
-function cloneObject(obj) {
-    return { ...obj };
-}
-
-// function with nexted object 
-function createNestedObject() {
-    return { user: { name: "Alex", age: 25 } };
-}
-
-function getNestedProperty(obj, key1, key2) {
-    return obj[key1]?.[key2];
-}
-
-function addItemToArrayInObject(obj, key, item) {
-    if (!Array.isArray(obj[key])) obj[key] = [];
-    obj[key].push(item);
-    return obj;
-}
-
-function removeItemFromArrayInObject(obj, key) {
-    if (Array.isArray(obj[key])) obj[key].pop();
-    return obj;
-}
-
-function deepMerge(obj1, obj2) {
-    return JSON.parse(JSON.stringify({ ...obj1, ...obj2 }));
-}
-
-function deepClone(obj) {
-    return JSON.parse(JSON.stringify(obj));
-}
-
-function objectToArray(obj) {
-    return Object.entries(obj);
-}
-
-function arrayToObject(arr) {
-    return Object.fromEntries(arr);
-}
-
-function filterArray(arr, callback) {
-    return arr.filter(callback);
-}
-
-function mapArray(arr, callback) {
-    return arr.map(callback);
-}
-
-// funtion return other funtions
-function multiplier(factor) {
-    return function (num) {
-        return num * factor;
-    };
-}
-
-function adder(value) {
-    return function (num) {
-        return num + value;
-    };
-}
-
-function functionRunner(func, value) {
-    return func(value);
-}
-
-function compose(f, g) {
-    return function (x) {
-        return f(g(x));
-    };
-}
-
-function memoize(fn) {
-    let cache = {};
-    return function (arg) {
-        if (cache[arg]) return cache[arg];
-        return (cache[arg] = fn(arg));
-    };
-}
-
-function once(fn) {
-    let called = false;
-    return function (...args) {
-        if (!called) {
-            called = true;
-            return fn(...args);
-        }
-    };
-}
-
-function createCounter() {
-    let count = 0;
-    return function () {
-        return ++count;
-    };
-}
-
-function callNTimes(fn, n) {
-    return function (...args) {
-        if (n > 0) {
-            n--;
-            return fn(...args);
-        }
-    };
-}
-
-function delayExecution(fn, time) {
-    return function (...args) {
-        setTimeout(() => fn(...args), time);
-    };
-}
-
-function asyncWrapper(fn) {
-    return async function (...args) {
-        return await fn(...args);
-    };
-}
+const arrowTen = () => console.log(`Here is an arrow function number ten without a parameter`);
+arrowTen();
+
+const arrowEleven = () => console.log(`Here is an arrow function number eleven without a parameter`);
+arrowEleven();
+
+const arrowTwelve = () => console.log(`Here is an arrow function number twelve without a parameter`);
+arrowTwelve();
+
+const arrowThirteen = () => console.log(`Here is an arrow function number thirteen without a parameter`);
+arrowThirteen();
+
+const arrowFourteen = () => console.log(`Here is an arrow function number fourteen without a parameter`);
+arrowFourteen();
+
+const arrowFifteen = () => console.log(`Here is an arrow function number fifteen without a parameter`);
+arrowFifteen();
+
+const arrowSixteen = () => console.log(`Here is an arrow function number sixteen without a parameter`);
+arrowSixteen();
+
+const arrowSeventeen = () => console.log(`Here is an arrow function number seventeen without a parameter`);
+arrowSeventeen();
+
+const arrowEighteen = () => console.log(`Here is an arrow function number eighteen without a parameter`);
+arrowEighteen();
+
+const arrowNineteen = () => console.log(`Here is an arrow function number nineteen without a parameter`);
+arrowNineteen();
+
+const arrowTwenty = () => console.log(`Here is an arrow function number twenty without a parameter`);
+arrowTwenty();
+
+const arrowTwentyOne = () => console.log(`Here is an arrow function number twenty-one without a parameter`);
+arrowTwentyOne();
+
+const arrowTwentyTwo = () => console.log(`Here is an arrow function number twenty-two without a parameter`);
+arrowTwentyTwo();
+
+const arrowTwentyThree = () => console.log(`Here is an arrow function number twenty-three without a parameter`);
+arrowTwentyThree
+
+
+const arrowTwentyFour = () => console.log(`Here is an arrow function number twenty-four`);
+arrowTwentyFour();
+
+const arrowTwentyFive = () => console.log(`Here is an arrow function number twenty-five`);
+arrowTwentyFive();
+
+const arrowTwentySix = () => console.log(`Here is an arrow function number twenty-six`);
+arrowTwentySix();
+
+
+const arrowTwentySeven = () => console.log(`Here is an arrow function number twenty-seven`);
+arrowTwentySeven();
+
+const arrowTwentyEight = () => console.log(`Here is an arrow function number twenty-eight`);
+arrowTwentyEight();
+
+const arrowTwentyNine = () => console.log(`Here is an arrow function number twenty-nine`);
+arrowTwentyNine();
+
+const arrowThirty = () => console.log(`Here is an arrow function number thirty`);
+arrowThirty();
+
+const arrowThirtyOne = () => console.log(`Here is an arrow function number thirty-one`);
+arrowThirtyOne();
+
+const arrowThirtyTwo = () => console.log(`Here is an arrow function number thirty-two`);
+arrowThirtyTwo();
+
+const arrowThirtyThree = () => console.log(`Here is an arrow function number thirty-three`);
+arrowThirtyThree();
+
+const arrowThirtyFour = () => console.log(`Here is an arrow function number thirty-four`);
+arrowThirtyFour();
+
+const arrowThirtyFive = () => console.log(`Here is an arrow function number thirty-five`);
+arrowThirtyFive();
+
+const arrowThirtySix = () => console.log(`Here is an arrow function number thirty-six`);
+arrowThirtySix();
+
+const arrowThirtySeven = () => console.log(`Here is an arrow function number thirty-seven`);
+arrowThirtySeven();
+
+const arrowThirtyEight = () => console.log(`Here is an arrow function number thirty-eight`);
+arrowThirtyEight();
+
+const arrowThirtyNine = () => console.log(`Here is an arrow function number thirty-nine`);
+arrowThirtyNine();
+
+const arrowForty = () => console.log(`Here is an arrow function number forty`)
+arrowForty();
+
+const arrowFortyOne = () => console.log(`Here is an arrow function number forty-one`);
+arrowFortyOne();
+
+const arrowFortyTwo = () => console.log(`Here is an arrow function number forty-two`);
+arrowFortyTwo();
+
+const arrowFortyThree = () => console.log(`Here is an arrow function number forty-three`);
+arrowFortyThree();
+
+const arrowFortyFour = () => console.log(`Here is an arrow function number forty-four`);
+arrowFortyFour();
+
+const arrowFortyFive = () => console.log(`Here is an arrow function number forty-five`);
+arrowFortyFive();
+
+const arrowFortySix = () => console.log(`Here is an arrow function number forty-six`);
+arrowFortySix();
+
+
+const arrowFortySeven = () => console.log(`Here is an arrow function number forty-seven`);
+arrowFortySeven();
+
+const arrowFortyEight = () => console.log(`Here is an arrow function number forty-eight`);
+arrowFortyEight();
+
+
+const arrowFortyNine = () => console.log(`Here is an arrow function number forty-nine`);
+arrowFortyNine();
+
+const arrowFifty = () => console.log(`Here is an arrow function number fifty`);
+arrowFifty();
