@@ -89,117 +89,121 @@ console.log(lastChar('Hello')); // o
 const concatenate = (str1, str2) => { return str1 + str2; };
 console.log(concatenate('Hello', 'World')); // HelloWorld
 
-// 22.
-const arrowTwentyTwo = (num) => `This is arrow function number ${num}`;
-console.log(arrowTwentyTwo(22));
-// 23.
-const arrowTwentyThree = (num) => `This is arrow function number ${num}`;
-console.log(arrowTwentyThree(23));
 
-// 24.
-const arrowTwentyFour = (num) => `This is arrow function number ${num}`;
-console.log(arrowTwentyFour(24));
+
+// 22.
+const arrowTwentyTwo = (num) => { return num};
+console.log(arrowTwentyTwo(`This is arrow function number ${num}`));
+
+// 23
+const arrowTwentyThree = (num) => { return num};
+console.log(arrowTwentyThree(`This is arrow function number ${num}`));
+
+// 24
+const arrowTwentyFour = (num) => { return num};
+console.log(arrowTwentyFour(`This is arrow function number ${num}`));
 
 // 25.
-const arrowTwentyFive = (num) => `This is arrow function number ${num}`;
-console.log(arrowTwentyFive(25));
+const arrowTwentyFive = (num) => { return num};
+console.log(arrowTwentyFive(`This is arrow function number ${num}`));
 
 // 26.
-const arrowTwentySix = (num) => `This is arrow function number ${num}`;
-console.log(arrowTwentySix(26));
+const arrowTwentySix = (num) => {return num};
+console.log(arrowTwentySix(`This is arrow function number ${num}`));
 
 // 27.
-const arrowTwentySeven = (num) => `This is arrow function number ${num}`;
-console.log(arrowTwentySeven(27));
+const arrowTwentySeven = (num) => {return num};
+console.log(arrowTwentySeven(`This is arrow function number ${num}`));
 
 // 28.
-const arrowTwentyEight = (num) => `This is arrow function number ${num}`;
-console.log(arrowTwentyEight(28));
+const arrowTwentyEight = (num) => {return num};
+console.log(arrowTwentyEight(`This is arrow function number ${num}`));
 
 // 29.
-const arrowTwentyNine = (num) => `This is arrow function number ${num}`;
-console.log(arrowTwentyNine(29));
+const arrowTwentyNine = (num) => {return num};
+console.log(arrowTwentyNine(`This is arrow function number ${num}`));
 
 // 30.
-const arrowThirty = (num) => `This is arrow function number ${num}`;
-console.log(arrowThirty(30));
+const arrowThirty = (num) => {return num};
+console.log(arrowThirty(`This is arrow function number ${num}`));
 
 // 31.
-const arrowThirtyOne = (num) => `This is arrow function number ${num}`;
-console.log(arrowThirtyOne(31));
+const arrowThirtyOne = (num) => {return num};
+console.log(arrowThirtyOne(`This is arrow function number ${num}`));
 
 // 32.
-const arrowThirtyTwo = (num) => `This is arrow function number ${num}`;
-console.log(arrowThirtyTwo(32));
+const arrowThirtyTwo = (num) => {return num};
+console.log(arrowThirtyTwo(`This is arrow function number ${num}`));
 
 // 33.
-const arrowThirtyThree = (num) => `This is arrow function number ${num}`;
-console.log(arrowThirtyThree(33));
+const arrowThirtyThree = (num) => {return num};
+console.log(arrowThirtyThree(`This is arrow function number ${num}`));
 
 // 34.
-const arrowThirtyFour = (num) => `This is arrow function number ${num}`;
-console.log(arrowThirtyFour(34));
+const arrowThirtyFour = (num) => {return num};
+console.log(arrowThirtyFour(`This is arrow function number ${num}`));
 
 // 35.
-const arrowThirtyFive = (num) => `This is arrow function number ${num}`;
-console.log(arrowThirtyFive(35));
+const arrowThirtyFive = (num) => {return num};
+console.log(arrowThirtyFive(`This is arrow function number ${num}`));
 
 // 36.
-const arrowThirtySix = (num) => `This is arrow function number ${num}`;
-console.log(arrowThirtySix(36));
+const arrowThirtySix = (num) => {return num};
+console.log(arrowThirtySix(`This is arrow function number ${num}`));
 
 // 37.
-const arrowThirtySeven = (num) => `This is arrow function number ${num}`;
-console.log(arrowThirtySeven(37));
+const arrowThirtySeven = (num) => {return num};
+console.log(arrowThirtySeven(`This is arrow function number ${num}`));
 
 // 38.
-const arrowThirtyEight = (num) => `This is arrow function number ${num}`;
-console.log(arrowThirtyEight(38));
+const arrowThirtyEight = (num) => {return num};
+console.log(arrowThirtyEight(`This is arrow function number ${num}`));
 
 // 39.
-const arrowThirtyNine = (num) => `This is arrow function number ${num}`;
-console.log(arrowThirtyNine(39));
+const arrowThirtyNine = (num) => {return num};
+console.log(arrowThirtyNine(`This is arrow function number ${num}`));
 
 // 40.
-const arrowForty = (num) => `This is arrow function number ${num}`;
-console.log(arrowForty(40));
+const arrowForty = (num) => {return num};
+console.log(arrowForty(`This is arrow function number ${num}`));
 
 // 41.
-const arrowFortyOne = (num) => `This is arrow function number ${num}`;
-console.log(arrowFortyOne(41));
+const arrowFortyOne = (num) => {return num};
+console.log(arrowFortyOne(`This is arrow function number ${num}`));
 
 // 42.
-const arrowFortyTwo = (num) => `This is arrow function number ${num}`;
-console.log(arrowFortyTwo(42));
+const arrowFortyTwo = (num) => {return num};
+console.log(arrowFortyTwo(`This is arrow function number ${num}`));
 
 // 43.
-const arrowFortyThree = (num) => `This is arrow function number ${num}`;
-console.log(arrowFortyThree(43));
+const arrowFortyThree = (num) => {return num};
+console.log(arrowFortyThree(`This is arrow function number ${num}`));
 
 // 44.
-const arrowFortyFour = (num) => `This is arrow function number ${num}`;
-console.log(arrowFortyFour(44));
+const arrowFortyFour = (num) => {return num};
+console.log(arrowFortyFour(`This is arrow function number ${num}`));
+
 
 // 45.
-const arrowFortyFive = (num) => `This is arrow function number ${num}`;
-console.log(arrowFortyFive(45));
+const arrowFortyFive = (num) => {return num};
+console.log(arrowFortyFive(`This is arrow function number ${num}`));
 
 // 46.
-const arrowFortysix = (num) => `This is arrow function number ${num}`;
-console.log(arrowFortysix(46));
+const arrowFortySix = (num) => {return num};
+console.log(arrowFortySix(`This is arrow function number ${num}`));
 
 // 47.
-const arrowFortySeven = (num) => `This is arrow function number ${num}`;
-console.log(arrowFortySeven(47));
+const arrowFortySeven = (num) => {return num};
+console.log(arrowFortySeven(`This is arrow function number ${num}`));
 
 // 48.
-const arrowFortyEight = (num) => `This is arrow function number ${num}`;
-console.log(arrowFortyEight(48));
+const arrowFortyEight = (num) => {return num};
+console.log(arrowFortyEight(`This is arrow function number ${num}`));
 
 // 49.
-const arrowFortyNine = (num) => `This is arrow function number ${num}`;
-console.log(arrowFortyNine(49));
+const arrowFortyNine = (num) => {return num};
+console.log(arrowFortyNine(`This is arrow function number ${num}`));
 
 // 50.
-const  arrowFity = (num) => `This is arrow function number ${num}`;
-console.log(arrowFity(50));
+const arrowFifty = (num) => {return num};
+console.log(arrowFifty(`This is arrow function number ${num}`));
