@@ -20,3 +20,5 @@ const wholeNumber3 = Math.round(number3);
 const resultInArrsy = [wholeNumber1, wholeNumber2, wholeNumber3];
 
 // console.log(resultInArrsy); output (5, 3 ,6)
+
+
